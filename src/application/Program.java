@@ -22,7 +22,7 @@ class Program {
 		Date checkOut = sdf.parse(sc.next());
 		
 		if (!checkOut.after(checkIn)) {
-			System.out.println("Error in reservation: Reservation dates for update must be future dates");
+			System.out.println("Error in reservation: Check-out date must be after check-in date.");
 		}
 		else {
 			Reservation reservation = new Reservation(number, checkIn, checkOut); 
