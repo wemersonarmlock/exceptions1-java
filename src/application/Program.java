@@ -43,8 +43,6 @@ class Program {
 			System.out.println("Error in reservation: Reservation dates for update must be future dates");
 		}
 		else {
-		
-		
 		reservation.updateDates(checkIn, checkOut);
 		System.out.println("Reservation: " + reservation);
 			}	
